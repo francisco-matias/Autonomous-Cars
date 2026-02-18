@@ -1,0 +1,40 @@
+-----------------------------------------------------------------------
+                         GUIDELINES
+-----------------------------------------------------------------------
+
+1.para executar os testes corer o commando: python3 ITS_core.py "node_nr"
+ 
+2.appconfig.py -> local_test = 0 if code when using the raspberry pies, 1 if in laptop
+
+2.Testes: 
+
+	#teste 1 : reação do carro ao semáfero. (para fins de testar a escala e a velocidade para os testes seguintes - TESTADO EM Vídeo)
+	
+		-um terminal responsável pelo nó 4 (RSU) 
+		-um terminal responsável pelo nó 5 (OBU)
+
+	#teste 2 : ambulância a fechar/abrir semáfero.
+	
+		-um terminal responsável pelo nó 4 (RSU) 
+		-um terminal responsável pelo nó 8 (emergency OBU)
+
+
+	#teste 3 : 4 OBUs com diferentes velocidades na mesma direção a comunicarem entre si e adaptarem a sua velocidade (adaptative cruise control).
+	
+		-4 terminais responsáveis por 4 nós no mesmo sentido (OBU)
+		- NOTA: confirmer ITS_maps para este caso porque está feito para outros cenários
+
+
+	#teste 4 : intersecção com dois carros em sentido perpendicular, e reação a adição de uma ambulância (comunicação rsu/emergency obu/rsu).
+	
+		-um terminal responsável pelo nó 4 (RSU) 
+		-um terminal responsável pelo nó 8 (emergency OBU) sentido S/N
+		-um terminal responsável pelo nó 5 (OBU) sentido S/N (à frente da ambulância)
+		-um terminal responsável pelo nó 6 (OBU) sentido E/O
+
+		
+
+
+PS: estamos prontos para fazer os testes necessários.
+
+
