@@ -2,8 +2,6 @@
 
 A distributed vehicular communication platform implementing cooperative driving services over a VANET architecture.
 
----
-
 ## Overview
 
 This project explores cooperative mobility through the design and implementation of a vehicular ad-hoc network (VANET) supporting real-time information exchange between vehicles.
